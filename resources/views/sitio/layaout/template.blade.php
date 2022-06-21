@@ -66,7 +66,9 @@
     <iframe src="https://www.youtube.com/embed/EL5vxipRYJk" title="YouTube video" allowfullscreen></iframe>
 </div>
 
+<br>
 
+<br>
 @yield('content')
 <!-- Portfolio Section-->
 
@@ -75,6 +77,9 @@
 <!-- Contact Section-->
 
 <!-- Footer-->
+<br>
+
+<br>
 <footer class="py-5 my-6 bg-secondary">
 
 @include('sitio.includes.footer')
