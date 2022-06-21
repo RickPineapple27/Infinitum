@@ -1,0 +1,2 @@
+@extends('sitio.layaout.template')
+
