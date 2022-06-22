@@ -2,8 +2,6 @@
 @section('content')
 
 
-
-
     <div >
         <div class="col-md-8  mx-auto ">
             <img src="assets/img/portfolio/infinitum.png" class="d-block w-100" alt="...">
