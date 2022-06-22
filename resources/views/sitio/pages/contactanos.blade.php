@@ -52,7 +52,7 @@
         <div>
             <label for="name">Paquetes</label>
             <select class="form-select bg-light shadow-sm @error('paquete') is-invalid @else border-0 @enderror" type="paquete"
-                    name="tel" placeholder="Paquetes de infinitum" autocomplete="off" value="{{old('paquete')}}">
+                    name="paquete" placeholder="Paquetes de infinitum" autocomplete="off" value="{{old('paquete')}}">
 
                 <option selected>Selecciona un paquete de infinitum</option>
 

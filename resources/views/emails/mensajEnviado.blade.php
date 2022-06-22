@@ -9,12 +9,12 @@
             a solicitado la contratacion de un servicio nuevo</p>
             <br>
             <h3>Sus datos son:</h3>
-            <p>{{$msg['name']}}</p>
-            <p>{{$msg['email']}}</p>
-            <p>{{$msg['address']}}</p>
-            <p>{{$msg['subject']}}</p>
-            <p>{{$msg['tel']}}</p>
-            <p>{{$msg['paquete']}}</p>
+            <p>NOMBRE: {{$msg['name']}}</p>
+            <p>Correo: {{$msg['email']}}</p>
+            <p>DIRECCION Y ENTRE CALLES: {{$msg['address']}}</p>
+            <p>REFERENCIAS: {{$msg['subject']}}</p>
+            <p>TELEFONO: {{$msg['tel']}}</p>
+            <p>PAQUETE DE INFINITUM: {{$msg['paquete']}}</p>
             <br>
             <h1> Atender las necesidades de este usuario en un lapso de 24 hrs.</h1>
             <br>
