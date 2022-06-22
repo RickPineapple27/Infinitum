@@ -9,10 +9,10 @@
                 a dejado su problema o queja para atenderlo. </p>
             <br>
             <h3>Sus datos son:</h3>
-            <p>{{$msg['name']}}</p>
-            <p>{{$msg['email']}}</p>
-            <p>{{$msg['tel']}}</p>
-            <h1>{{$msg['subject']}}</h1>
+            <p>NOMBRE: {{$msg['name']}}</p>
+            <p>CORREO: {{$msg['email']}}</p>
+            <p>TELEFONO: {{$msg['tel']}}</p>
+            <p>MENSAJE: {{$msg['subject']}}</p>
             <br>
             <h1> Atender las necesidades de este usuario en 24 hrs.</h1>
             <br>
