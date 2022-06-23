@@ -36,7 +36,7 @@
 
         <div class="form-group">
             <label for="name">Tel (celular)</label>
-            <input class="form-control bg-light shadow-sm @error('tel') is-invalid @else border-0 @enderror" type="phone"
+            <input onkeypress="return (event.charCode >= 48 && event.charCode <= 57)" class="form-control bg-light shadow-sm @error('tel') is-invalid @else border-0 @enderror" type="phone"
                    name="tel" placeholder="288..." autocomplete="off" value="{{old('tel')}}">
             @error('tel')
             <span class="invalid-feedback" role="alert">
