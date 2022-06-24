@@ -50,6 +50,17 @@ Route::group(['prefix' => 'sitio'], function(){
 
     ]);
 
+    Route::get('/imprimir', [
+        'as' => 'sitio.emails',
+        'uses' => 'VistasController@imprimir'
+
+    ]);
+
+
+///vista que retorna el envio de datos en la app
+    Route::view('emails','imprimir');
+
+///vista que retorna el envio de datos en la app
     Route::view('emails','TestEmail');
 
   ///  Route::get('/send-email', [MailController::class, 'sendEmail']);
@@ -62,7 +73,8 @@ Route::group(['prefix' => 'sitio'], function(){
     Route::post('/contact','MailController@store')->name('details.sendEmail');
 ///envio de quejas
     Route::post('/contacto','QuejasController@store')->name('enviar.peticion');
-
+///envio de datos para imprimir
+    ///Route::post('/imprimirdata','imprimirController@more')->name('details.sendEmail');
 
 });
 

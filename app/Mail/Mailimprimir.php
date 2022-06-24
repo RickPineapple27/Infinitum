@@ -7,27 +7,19 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class contactanosMailable extends Mailable
+class Mailimprimir extends Mailable
 {
     use Queueable, SerializesModels;
-
-    public $subject='mensaje recibido';
-    public $msg;
-
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($message )
+    public function __construct($message)
     {
-        $this ->  msg = $message;
 
     }
-
-
-
 
     /**
      * Build the message.
@@ -36,16 +28,6 @@ class contactanosMailable extends Mailable
      */
     public function build()
     {
-        return $this->view( 'emails.mensajEnviado');
-
 
     }
-
-    public function data()
-    {
-        return $this->view( 'emails.imprimir');
-
-    }
-
-
 }

@@ -9,11 +9,18 @@ class QuejasController extends Controller
 {
     public function store(Request $request)
     {
+        $request->validate([
+            'name' => ['required'],
+            'email' => ['required'],
+            'subject' => ['required']
+
+        ]);
+
         $message=[
             'name' => $request->name,
             'email' => $request->email,
-            'subject' => $request->subject,
-            'tel' => $request->tel
+            'subject' => $request->subject
+
         ];
         // Mail::to($message['email'])->send(new contactanosMailable($message) );
         Mail::to('contactoventas.infinitum@gmail.com')->send(new quejasMailable($message) );

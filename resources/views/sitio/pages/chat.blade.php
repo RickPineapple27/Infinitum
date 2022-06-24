@@ -15,7 +15,7 @@
                    name="name" placeholder="Nombre..." autocomplete="off" value="{{old('name')}}">
             @error('name')
             <span class="invalid-feedback" role="alert">
-           <strong>{($message}}</strong>
+           <strong>{{$message}}</strong>
            </span>
             @enderror
         </div>
@@ -27,32 +27,20 @@
                    name="email" placeholder="Miejemplo@algo.com" autocomplete="off" value="{{old('email')}}">
             @error('email')
             <span class="invalid-feedback" role="alert">
-           <strong>{($message}}</strong>
+           <strong>{{$message}}</strong>
            </span>
             @enderror
         </div>
         <br>
         <br>
 
-        <div class="form-group">
-            <label for="name">Tel (celular)</label>
-            <input class="form-control bg-light shadow-sm @error('tel') is-invalid @else border-0 @enderror" type="phone"
-                   name="tel" placeholder="288..." autocomplete="off" value="{{old('tel')}}">
-            @error('tel')
-            <span class="invalid-feedback" role="alert">
-           <strong>{($message}}</strong>
-           </span>
-            @enderror
-        </div>
-        <br>
-        <br>
-        <div class="form-group">
-            <label for="subject">Mensaje </label>
-            <input class="form-control bg-light shadow-sm @error('subject') is-invalid @else border-0 @enderror" type="subject"
-                   name="subject" placeholder="problemas y dudas.." autocomplete="off" value="{{old('subject')}}">
+        <div class="form-group mb-3 ">
+            <label for="subject" class="form-label">Dudas, quejas y aclaraciones</label>
+            <textarea class="form-control bg-light shadow-sm @error('subject') is-invalid @else border-0 @enderror" type="subject"
+                      name="subject" placeholder="Queja.." autocomplete="off" value="{{old('subject')}}"></textarea>
             @error('subject')
             <span class="invalid-feedback" role="alert">
-           <strong>{($message}}</strong>
+           <strong>{{$message}}</strong>
            </span>
             @enderror
         </div>

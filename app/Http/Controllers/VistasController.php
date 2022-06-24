@@ -23,6 +23,10 @@ class VistasController extends Controller
         return view('sitio.pages.chat');
     }
 
+    public function imprimir(){
+        return view('emails.imprimir');
+    }
+
 
 
 }
