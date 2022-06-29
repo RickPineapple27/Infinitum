@@ -74,7 +74,7 @@ Route::group(['prefix' => 'sitio'], function(){
 ///envio de quejas
     Route::post('/contacto','QuejasController@store')->name('enviar.peticion');
 ///envio de datos para imprimir
-    ///Route::post('/imprimirdata','imprimirController@more')->name('details.sendEmail');
+  //  Route::post('/imprimirdata','imprimirController@more')->name('imprimir');
 
 });
 

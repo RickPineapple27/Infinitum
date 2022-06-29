@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Mail\contactanosMailable;
+use App\Mail\Mailimprimir;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -21,6 +22,9 @@ class MailController extends Controller
             'paquete' => ['required'],
             'colonia' => ['required'],
         ]);
+
+
+
         $message=[
             'name' => $request->name,
             'email' => $request->email,
@@ -30,19 +34,32 @@ class MailController extends Controller
             'paquete' => $request->paquete,
             'colonia' => $request->colonia
         ];
+
+
+
+
        // Mail::to($message['email'])->send(new contactanosMailable($message) );
+
+        //aqui ya se esta enviando el correo al lugar correcto
         Mail::to('contactoventas.infinitum@gmail.com')->send(new contactanosMailable($message));
 
+       //aqui retornamos cada uno de los datos que enviamos en el formulario en la app
+        //return $message;
+
+        //hacer contructor para armar la tabla de estos datos
+       // $this->mailImprimir = new Mailimprimir($message);
+
+
+
+        //con estas mandamos a traer las vistas
        //return view ('pages.mensajEnviado');
         return view( 'emails.TestEmail');
-        //return redirect('ayuda');
-       //return view($message);
 
-       //return redirect()->route("pages.mensajEnviado");
-      //  return $this->view( 'emails.TestEmail');
 
-       // return new contactanosMailable($message['name']);
-        // return new contactanosMailable(buid);
+        //Con esta mandamos a traer cada uno de los valores por separado
+      // return ($message['name']);
+
+        // Con esta solo restornamos un mensaje con la leyenda "Mensaje enviado"
        // return "Mensaje enviado";
     }
 

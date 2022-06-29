@@ -7,7 +7,7 @@
     <br>
     <br>
     <br>
-    <form method="post" action="{{route('details.sendEmail')}}" class="col-lg-6 col-md-8 mx-auto">
+    <form method="post" action="{{route('details.sendEmail')}}"  class="col-lg-6 col-md-8 mx-auto">
         @csrf
         <div class="form-group">
             <label for="name">Nombre</label>

@@ -41,11 +41,7 @@ class contactanosMailable extends Mailable
 
     }
 
-    public function data()
-    {
-        return $this->view( 'emails.imprimir');
 
-    }
 
 
 }

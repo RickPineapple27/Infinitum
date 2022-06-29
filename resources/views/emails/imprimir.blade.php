@@ -2,13 +2,16 @@
     <!doctype html>
 <html lang="es">
 <head>
-    @include('sitio.includes.head')
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email de contratacion!</title>
 
     <!-- links para exportar a excel -->
     <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
     <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
     <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"><!--<![endif]-->
 
 
 </head>
@@ -72,22 +75,22 @@
                 <tr style="border: 1px solid black;
             border-collapse: collapse;">
                     <th style="border: 1px solid black;
-            border-collapse: collapse;"></th>
+            border-collapse: collapse;">{{$msg['name']}}</th>
 
                     <td style="border: 1px solid black;
-            border-collapse: collapse;"></td>
+            border-collapse: collapse;">{{$msg['email']}}</td>
 
                     <td style="border: 1px solid black;
-            border-collapse: collapse;"></td>
+            border-collapse: collapse;">{{$msg['address']}}</td>
 
                     <td style="border: 1px solid black;
-            border-collapse: collapse;"></td>
+            border-collapse: collapse;">{{$msg['subject']}}</td>
 
                     <td style="border: 1px solid black;
-            border-collapse: collapse;"></td>
+            border-collapse: collapse;">{{$msg['tel']}}</td>
 
                     <td style="border: 1px solid black;
-            border-collapse: collapse;"></td>
+            border-collapse: collapse;">{{$msg['paquete']}}</td>
 
                 </tr>
 
@@ -95,15 +98,10 @@
 
         </div>
         <br><br>
-
-    </div>
-    <br><br><br><br><br>
-    <div align="center">
-        <button  id="btnExportar" class="btn btn-success">
-            <i class=" fa-file-excel"></i> Exportar datos a Excel
+        <button align="center" id="btnExportar" class="btn btn-success">
+            <i class="fas fa-file-excel"></i> Exportar datos a Excel
         </button>
     </div>
-
 </div>
 
 
@@ -119,8 +117,8 @@
     $btnExportar.addEventListener("click", function() {
         let tableExport = new TableExport($tabla, {
             exportButtons: false, // No queremos botones
-            filename: "Reporte diario", //Nombre del archivo de Excel
-            sheetname: "Reporte diario", //Título de la hoja
+            filename: "Reporte de prueba", //Nombre del archivo de Excel
+            sheetname: "Reporte de prueba", //Título de la hoja
         });
         let datos = tableExport.getExportData();
         let preferenciasDocumento = datos.tabla.xlsx;
