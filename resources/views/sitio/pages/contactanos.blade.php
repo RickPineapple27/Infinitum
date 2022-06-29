@@ -112,11 +112,6 @@
                 <option value="Regular-50mbps-solo internet-$349">Regular-50mbps-solo internet-$349</option>
                 <option value="Regular-100mbps-solo internet-$449">Regular-100mbps-solo internet-$449</option>
 
-                <option value="Promocion-100mbps-telefonia+internet-$435">Promocion-100mbps-telefonia+internet-$435</option>
-                <option value="Promocion-150mbps-telefonia+internet-$599">Promocion-150mbps-telefonia+internet-$599</option>
-                <option value="Regular-50mbps-telefonia+internet-$389">Regular-50mbps-telefonia+internet-$389</option>
-                <option value="Regular-50mbps-solo internet-$349">Regular-50mbps-solo internet-$349</option>
-                <option value="Regular-100mbps-solo internet-$449">Regular-100mbps-solo internet-$449</option>
 
                 @error('paquete')
                 <span class="invalid-feedback" role="alert">
