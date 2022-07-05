@@ -206,12 +206,7 @@
                                             <tr style="border-collapse:collapse">
                                                 <td>
 
-                                                        <tr align="center" style="border-collapse:collapse">
 
-                                                            <br>
-                                                            <td><a href="{{ route('sitio.emails')}}" >Descargar archico Excel</a></td>
-
-                                                        </tr>
                                                     </td>
                                             </tr>
                                         </table>

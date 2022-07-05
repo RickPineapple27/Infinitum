@@ -5,13 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Email de contratacion!</title>
+    <title>Tu Mensaje fue enviado con exito!</title>
 
-    <!-- links para exportar a excel -->
-    <script src="https://unpkg.com/xlsx@0.16.9/dist/xlsx.full.min.js"></script>
-    <script src="https://unpkg.com/file-saverjs@latest/FileSaver.min.js"></script>
-    <script src="https://unpkg.com/tableexport@latest/dist/js/tableexport.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i" rel="stylesheet"><!--<![endif]-->
 
 
 </head>
@@ -54,53 +49,56 @@
             border-collapse: collapse;">
                     <th style="border: 1px solid black;
             border-collapse: collapse;" >Nombre</th>
-
+                    <br>
                     <th style="border: 1px solid black;
             border-collapse: collapse;">Email</th>
-
+                    <br>
                     <th style="border: 1px solid black;
             border-collapse: collapse;">Direccion</th>
-
+                    <br>
+                    <th style="border: 1px solid black;
+            border-collapse: collapse;">colonia</th>
+                    <br>
                     <th style="border: 1px solid black;
             border-collapse: collapse;">Referencia</th>
-
+                    <br>
                     <th style="border: 1px solid black;
             border-collapse: collapse;">Telefono</th>
-
+                    <br>
                     <th style="border: 1px solid black;
             border-collapse: collapse;">Paquete</th>
-
                 </tr>
 
                 <tr style="border: 1px solid black;
             border-collapse: collapse;">
                     <th style="border: 1px solid black;
             border-collapse: collapse;">{{$msg['name']}}</th>
-
+                    <br>
                     <td style="border: 1px solid black;
             border-collapse: collapse;">{{$msg['email']}}</td>
-
+                    <br>
                     <td style="border: 1px solid black;
-            border-collapse: collapse;">{{$msg['address']}}</td>
-
+            border-collapse: collapse;">{{$msg['direccion']}}</td>
+                    <br>
                     <td style="border: 1px solid black;
-            border-collapse: collapse;">{{$msg['subject']}}</td>
-
+            border-collapse: collapse;">{{$msg['colonia']}}</td>
+                    <br>
                     <td style="border: 1px solid black;
-            border-collapse: collapse;">{{$msg['tel']}}</td>
-
+            border-collapse: collapse;">{{$msg['referencia']}}</td>
+                    <br>
+                    <td style="border: 1px solid black;
+            border-collapse: collapse;">{{$msg['telefono']}}</td>
+                    <br>
+                    <br>
                     <td style="border: 1px solid black;
             border-collapse: collapse;">{{$msg['paquete']}}</td>
-
                 </tr>
 
             </table>
 
         </div>
         <br><br>
-        <button align="center" id="btnExportar" class="btn btn-success">
-            <i class="fas fa-file-excel"></i> Exportar datos a Excel
-        </button>
+
     </div>
 </div>
 
@@ -110,21 +108,7 @@
 
 
 <!-- script para exportar a excel -->
-<script>
-    const $btnExportar = document.querySelector("#btnExportar"),
-        $tabla = document.querySelector("#tabla");
 
-    $btnExportar.addEventListener("click", function() {
-        let tableExport = new TableExport($tabla, {
-            exportButtons: false, // No queremos botones
-            filename: "Reporte de prueba", //Nombre del archivo de Excel
-            sheetname: "Reporte de prueba", //Título de la hoja
-        });
-        let datos = tableExport.getExportData();
-        let preferenciasDocumento = datos.tabla.xlsx;
-        tableExport.export2file(preferenciasDocumento.data, preferenciasDocumento.mimeType, preferenciasDocumento.filename, preferenciasDocumento.fileExtension, preferenciasDocumento.merges, preferenciasDocumento.RTL, preferenciasDocumento.sheetname);
-    });
-</script>
 
 </body>
 </html>

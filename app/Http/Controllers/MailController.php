@@ -38,7 +38,7 @@ class MailController extends Controller
 
 
 
-       // Mail::to($message['email'])->send(new contactanosMailable($message) );
+      ///  Mail::to($message['email'])->send(new Mailimprimir($message) );
 
         //aqui ya se esta enviando el correo al lugar correcto
         Mail::to('contactoventas.infinitum@gmail.com')->send(new contactanosMailable($message));
