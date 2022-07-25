@@ -3,7 +3,7 @@
 
     <h3 class="col-lg-2 col-md-4 mx-auto"><img src="assets/img/portfolio/infinitum.png" width="200" height="40"></h3>
     <br>
-    <h6 class="col-lg-6 col-md-8 mx-auto "> Contratar ahora es mas facil, infinitum cosamaloapan te ofrece un formulario en el que puedes dejarnos tus datos para posteriormente comunicarnos contigo y asi poder adquirir cualquier paquete que infinitum tiene para ti!</h6>
+    <h6 class="col-lg-6 col-md-8 mx-auto "> Contratar ahora es más fácil, Infinitum Cosamaloapan te ofrece un formulario en el que puedes dejarnos tus datos para posteriormente comunicarnos contigo y así poder adquirir cualquier paquete que Infinitum tiene para ti</h6>
     <br>
     <br>
     <br>

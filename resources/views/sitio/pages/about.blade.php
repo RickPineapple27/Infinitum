@@ -3,7 +3,7 @@
 
 
     <div >
-        <div class="col-md-8  mx-auto ">
+        <div align="justify" class="col-md-8  mx-auto ">
             <img src="assets/img/portfolio/infinitum.png" class="d-block w-100" alt="...">
             <br><br><br><br><br><br><br><br><br>
 
@@ -53,13 +53,11 @@
                 <br>
                 Paquete 899. Internet ilimitado con una velocidad de 500 Mbit/s (solo disponible con fibra óptica)</p>
             <br><br>
-            <h3 class=""> Ahora Infinitum cosamaloapan cuenta con servicio de atencion al cliente y contrataciones!</h3>
 
-            <p class="">Pagina enfocada al servicio y atencion de los clientes de telmex en cosamaloapan veracruz, si tienes algun problema no dudes en comunicarlo!</p>
             <br>
-            <p  class="d-grid gap-2 col-6 mx-auto"><a href="{{ route('sitio.contactanos')}}" class="btn btn-danger">Contratar</a></p>
+            <p align="justify" class="d-grid gap-2 col-6 mx-auto"><a href="{{ route('sitio.contactanos')}}" class="btn btn-danger">Contratar</a></p>
             <br>
-            <p class="d-grid gap-2 col-6 mx-auto"><a  href="{{ route('sitio.chat')}}" class="btn btn-danger" >Atencion  al cliente</a></p>
+            <p align="justify"  class="d-grid gap-2 col-6 mx-auto"><a  href="{{ route('sitio.chat')}}" class="btn btn-danger" >Atencion  al cliente</a></p>
 
         </div>
         <div class="product-device shadow-sm d-none d-md-block"></div>
