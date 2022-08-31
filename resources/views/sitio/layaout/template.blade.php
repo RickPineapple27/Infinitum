@@ -23,7 +23,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="assets/img/portfolio/checo.png" class="d-block w-100" alt="...">
+                <img src="assets/img/portfolio/baner2.png" class="d-block w-100" alt="...">
 
                 <div class="carousel-caption d-none d-md-block">
 
@@ -31,6 +31,12 @@
             </div>
             <div class="carousel-item ">
                 <img src="assets/img/portfolio/ramirez.png" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="assets/img/portfolio/checo.png" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
 
                 </div>
@@ -46,8 +52,12 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+
     <br>
-    <p  class="d-grid gap-2 col-6 mx-auto"><a href="{{ route('sitio.contactanos')}}" class="btn btn-danger">Contratar</a></p>
+    <p>Contratar ahora es más fácil,te ofrecemos un formulario en el que puedes dejarnos tus datos para posteriormente comunicarnos contigo y así poder adquirir cualquier paquete que Infinitum tiene para ti</p>
+    <br>
+
+    <p  class="d-grid gap-2 col-6 mx-auto"><a href="{{ route('sitio.contactanos')}}" class="btn btn-info">¡Contrata ya!</a></p>
 
 
 
@@ -62,9 +72,7 @@
 <br>
 
 <br>
-<div class="ratio ratio-16x9 container">
-    <iframe src="https://www.youtube.com/embed/EL5vxipRYJk" title="YouTube video" allowfullscreen></iframe>
-</div>
+
 
 <br>
 

@@ -2,9 +2,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Infinitum Cosamaloapan</title>
+    <title>ContrataYa!</title>
     <!-- Favicon-->
-<link rel="icon" href="{{ url('css/favicon.ico') }}">
+<link rel="icon" href="{{ url('css/favicon.svg') }}">
 <link rel="stylesheet" type="text/css" href="{{ url('css/style.css') }}">
     <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />

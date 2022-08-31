@@ -23,7 +23,7 @@ class QuejasController extends Controller
 
         ];
         // Mail::to($message['email'])->send(new contactanosMailable($message) );
-        Mail::to('contactoventas.infinitum@gmail.com')->send(new quejasMailable($message) );
+        Mail::to('contratayacontacto@gmail.com')->send(new quejasMailable($message) );
         // return view ('pages.mensajEnviado');
         return view( 'emails.TestEmail');
 

@@ -1,5 +1,5 @@
 <div class="container">
-        <a class="navbar-brand" href="{{ route('sitio.index')}}"><img src="assets/img/portfolio/infinitum.png" width="150" height="30"></a>
+        <a class="navbar-brand" href="{{ route('sitio.index')}}"><img src="assets/img/portfolio/logo.png" width="40" height="40"> ContrataYa!</a>
 
         <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-black rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             Menu

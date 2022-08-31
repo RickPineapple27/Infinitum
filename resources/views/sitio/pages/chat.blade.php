@@ -1,7 +1,7 @@
 @extends('sitio.layaout.Atencion')
 @section('content')
 
-    <h3 class="col-lg-2 col-md-4 mx-auto"><img src="assets/img/portfolio/infinitum.png" width="200" height="40"></h3>
+    <h3 class="col-lg-2 col-md-4 mx-auto"><img src="assets/img/portfolio/logo.png" width="100" height="100"></h3>
     <br>
     <h6 class="col-lg-6 col-md-8 mx-auto ">Infinitum Cosamaloapan ahora cuenta con buzón de problemas o quejas para poder atender puntualmente cada una de las necesidades de nuestros clientes</h6>
     <br>
